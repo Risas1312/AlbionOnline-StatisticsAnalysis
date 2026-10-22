@@ -17,7 +17,7 @@ namespace StatisticsAnalysisTool.Network.Handler;
 public class UpdateFameEventHandler : EventPacketHandler<UpdateFameEvent>
 {
     private static readonly HttpClient HttpClient = new();
-    private const string AlbionWebUrl = "http://192.168.1.50:4000/api/albion/stats";
+    private const string AlbionWebUrl = "http://192.168.1.85:4000/api/albion/stats";
 
     private readonly LiveStatsTracker _liveStatsTracker;
     private readonly TrackingController _trackingController;
